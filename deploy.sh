@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -e # exit with nonzero exit code if anything fails
+set -e # exit with nonzero exit code if anything fails
 
 # go to the module directory and create a *new* Git repo
 cd build
