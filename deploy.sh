@@ -4,7 +4,6 @@
 # go to the module directory and create a *new* Git repo
 cd build
 git init
-git remote add -t gh-pages -f origin "https://${GH_TOKEN}@${GH_REF}"
 
 # inside this git repo we'll pretend to be a new user
 git config user.name "gundisalwa"
@@ -18,4 +17,4 @@ git commit -m "Wrecking Ball React Demo $TRAVIS_TAG" --allow-empty
 # force push from the current repo's master
 # (all previous history will be lost, since we are overwriting it.)
 # we redirect any output to /dev/null to hide any sensitive credential data that might otherwise be exposed.
-git push --force --quiet origin gh-pages > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
