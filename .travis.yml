@@ -7,10 +7,8 @@ language: node_js
 node_js:
 - '5.1.0'
 
-install:
-- npm install
+script: npm run build
 
-after_install:
-- npm build
+after_script:
 - bash deploy.sh
 
