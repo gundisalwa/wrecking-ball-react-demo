@@ -1,10 +1,10 @@
 #!/bin/bash
-set -e # exit with nonzero exit code if anything fails
+# set -e # exit with nonzero exit code if anything fails
 
 # go to the module directory and create a *new* Git repo
 cd build
 git init
-git remote add -t gh-pages -f origin "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git"
+git remote add -t gh-pages -f origin "https://${GH_TOKEN}@${GH_REF}"
 
 # inside this git repo we'll pretend to be a new user
 git config user.name "gundisalwa"
