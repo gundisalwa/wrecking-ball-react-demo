@@ -7,8 +7,8 @@ git init
 git remote add -t gh-pages -f origin "https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git"
 
 # inside this git repo we'll pretend to be a new user
-git config user.name "pentaho"
-git config user.email "pentaho@pentaho.com"
+git config user.name "gundisalwa"
+git config user.email "gundisalwa@gmail.com"
 
 # the first and only commit to this new Git repo contains all the
 # files present with the commit message.
