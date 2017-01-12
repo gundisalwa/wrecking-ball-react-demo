@@ -1,2 +1,9 @@
-# wrecking-ball-react-demo
-React Presentation and Demo creating a Wrecking Ball component
+# WebpackBin project
+
+## Start
+
+`npm install`
+
+`npm start`
+
+Go to `localhost:8080`
