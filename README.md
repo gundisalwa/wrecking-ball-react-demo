@@ -1,4 +1,5 @@
-# WebpackBin project
+# Wrecking Ball React Demo
+A React Demo project that builds a wrecking ball component.
 
 ## Start
 
